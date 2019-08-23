@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap&subset=cyrillic');
+
+html {
+    font-family: 'Roboto', serif;
+    color: #333333;
+}
+
+body {
+    position: relative;
+    font-size: 16px;
+}
+
+.myBtn {
+    background-color: #EB5757;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+    border-radius: 5rem;
+    padding: 15px 32px;
+    width: 25rem;
+    max-width: 25rem;
+    height: 5rem;
+}
+.myBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2)
+}
+button:focus {
+    outline:0;
+}
+
+/*  -- HEADER -- */
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("img/2500w.jpg");
+    background-size: cover;
+    position: relative;
+    /* background-position: center; */
+}
+header div.container {
+    max-width: 80%;
+    padding-top: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*  -- NAVIGATION -- */
+.navbar {
+    z-index: 1000;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-brand img {
+    width: 3rem;
+    filter: invert(0.7);
+}
+.nav-item {
+    font-weight: 400;
+    padding: 0 1.5rem;
+}
+
+.social {
+    opacity: 0.8;
+    padding-left: 1.5rem;
+}
+.social-header {
+    color: #333333;
+}
+.fab:hover {
+    color: #0F215E;
+}
+
+/*  -- NAVIGATION  END -- */
+
+.text-box{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: #333333;
+    font-family: 'Roboto Slab', serif;
+}
+.text-box h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 500%;
+}
+.text-box h2 {
+    font-weight: 700;
+    font-size: 350%;
+    margin-bottom: 5%;
+}
+.text-box h4 {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    margin-bottom: 10%;
+    margin-top: 5%
+}
+.text-box img {
+    vertical-align: baseline;
+    margin-right: 10px;
+}
+.text-box .myBtn {
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .text-box h1 {
+        font-size: 300%;
+    }
+    .text-box h2 {
+        font-size: 200%;
+    }
+    .text-box h4 {
+        font-size: 100%;
+    }
+    .navbar-collapse .collapse.show {
+
+
+    }
+}
+
+/*  -- HEADER END -- */
+
+.container {
+    max-width: 80%;
+    font-weight: 300;
+    margin-top:10vh;
+    margin-bottom: 10vh;
+}
+
+.container h1, .container h2, .container h3 {
+    color: #0F215E;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+
+.container h1 {
+    font-size: 4rem;
+}
+
+.container h2 {
+    font-size: 3rem;
+}
+
+.col-lg-6 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding-top: 5vh;
+        padding-bottom: 0;
+        max-width: 95%;
+    }
+    .container h2 {
+        font-size: 3rem;
+    }
+    .container h1 {
+        font-size: 3rem;
+    }
+    .col-lg-6 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+/* -- JOGA SECTION -- */
+
+
+
+/* -- DIAMONDS SECTION */
+.diamond {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem 1rem 2rem 1rem;
+    text-align: center;
+    line-height: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.diamond:before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transform: rotateZ(45deg);
+    border: 1px solid #EB5757;
+    border-radius: 10px;
+}
+.title {
+    margin-bottom: 3rem;
+}
+.col-12 button {
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container h2 {
+        font-size: 3rem;
+    }
+    .col-lg-6 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* -- JULES FEBRE -- */
+
+
+/* -- SCHEDULE -- */
+#schedule .container{
+    background: #fff;
+    background-image: linear-gradient(to top, transparent, #fff), url("img/stephanie-moors.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#schedule .row {
+    width: 80%;
+}
+#schedule h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+#schedule button {
+    width: inherit;
+}
+.schedule {
+    padding: 1.5rem;
+    border: 1px solid #EB5757;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    margin-right: 15%;
+    max-width: 400px;
+}
+.schedule h2, .schedule h3 {
+    color: #EB5757;
+}
+.schedule h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.schedule h3 {
+    letter-spacing: 0!important;
+}
+
+@media screen and (max-width: 1200px) {
+    #schedule .container {
+        background-image: none;
+        max-width: 90%;
+        height: auto;
+    }
+    #schedule .row {
+        width: 95%;
+    }
+    .col-md-12 {
+        margin-bottom: 1.5rem;
+    }
+    .schedule {
+        margin-right: 0;
+    }
+}
+
+/*  -- PLACE -- */
+#place .container {
+    padding-top: 10vh;
+}
+.marker {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    #place .container {
+        padding-top: 5vh;
+    }
+}
+
+/*  -- BUY TICKETS */
+
+#buyTickets .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#buyTickets .row {
+    width: 80%;
+}
+.buyTicket {
+    text-align: center;
+    height: 600px;
+    min-width: 350px;
+    max-width: 400px;
+    padding: 3rem 1rem 1rem 1rem;
+    border: 1px solid #EB5757;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+.buyTicket ul {
+    flex-grow: 1;
+    padding-left: 3rem;
+    text-align: left;
+    font-size: 1rem;
+}
+.buyTicket li {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+.buyTicket h3 {
+    color: #EB5757;
+    font-size: 1.5rem;
+}
+.buyTicket button {
+    width: inherit;
+}
+div.buyTicket:hover {
+    border: 2px solid #EB5757;
+    box-shadow: 5px 5px 8px rgba(235, 87, 87, 0.1);
+}
+hr {
+    border-top: 2px solid #0F215E;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 15rem;
+    align: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #buyTickets .row {
+        width: 95%;
+    }
+    .col-md-12 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+/*  -- FOOTER -- */
+footer {
+    height: 109px;
+    background: #333333;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 135%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+footer img {
+    height: 55px;
+}
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    text-decoration: none;
+}
+.social-footer {
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding-top: 10px;
+    }
+    footer div {
+        padding: 10px;
+    }
+    .social-footer {
+        padding: 10px;
+    }
+}
+/* -- MODAL -- */
+
+.modal-content {
+    border-radius: 10px;
+}
+.modal-header h4 {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    color: #0F215E;
+}
+.modal-footer .btn {
+    border: none;
+    border-radius: 7px;
+}
+.modal-footer .btn-primary{
+    background-color: #EB5757;
+}
+.modal-footer .btn-secondary{
+    background-color: #333333;
+}
