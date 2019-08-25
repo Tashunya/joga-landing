@@ -11,130 +11,10 @@ body {
     font-size: 16px;
 }
 
-.myBtn {
-    background-color: #EB5757;
-    border: none;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 0.4rem;
-    border-radius: 5rem;
-    padding: 15px 32px;
-    width: 25rem;
-    max-width: 25rem;
-    height: 5rem;
-}
-.myBtn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2)
-}
-button:focus {
-    outline:0;
-}
-
-/*  -- HEADER -- */
-
-header {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("img/2500w.jpg");
-    background-size: cover;
-    position: relative;
-    /* background-position: center; */
-}
-header div.container {
-    max-width: 80%;
-    padding-top: 2rem;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/*  -- NAVIGATION -- */
-.navbar {
-    z-index: 1000;
-}
-.navbar-toggler {
-    border: none;
-}
-.navbar-brand img {
-    width: 3rem;
-    filter: invert(0.7);
-}
-.nav-item {
-    font-weight: 400;
-    padding: 0 1.5rem;
-}
-
-.social {
-    opacity: 0.8;
-    padding-left: 1.5rem;
-}
-.social-header {
-    color: #333333;
-}
-.fab:hover {
-    color: #0F215E;
-}
-
-/*  -- NAVIGATION  END -- */
-
-.text-box{
-    position: absolute;
-    top: 20%;
-    left: 12%;
-    color: #333333;
-    font-family: 'Roboto Slab', serif;
-}
-.text-box h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 500%;
-}
-.text-box h2 {
-    font-weight: 700;
-    font-size: 350%;
-    margin-bottom: 5%;
-}
-.text-box h4 {
-    display: inline-block;
-    font-weight: 700;
-    text-transform: uppercase;
-    vertical-align: baseline;
-    margin-bottom: 10%;
-    margin-top: 5%
-}
-.text-box img {
-    vertical-align: baseline;
-    margin-right: 10px;
-}
-.text-box .myBtn {
-    display: block;
-}
-
-@media (max-width: 768px) {
-
-    .text-box h1 {
-        font-size: 300%;
-    }
-    .text-box h2 {
-        font-size: 200%;
-    }
-    .text-box h4 {
-        font-size: 100%;
-    }
-    .navbar-collapse .collapse.show {
-
-
-    }
-}
-
-/*  -- HEADER END -- */
-
 .container {
     max-width: 80%;
     font-weight: 300;
-    margin-top:10vh;
+    margin-top: 10vh;
     margin-bottom: 10vh;
 }
 
@@ -162,32 +42,168 @@ p {
     margin-bottom: 1rem;
 }
 
+.myBtn {
+    background-color: #EB5757;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+    border-radius: 5rem;
+    padding: 15px 32px;
+    width: 25rem;
+    max-width: 25rem;
+    height: 5rem;
+}
+
+.myBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: 0;
+}
+
+/*  -- HEADER -- */
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("img/2500w.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+header div.container {
+    max-width: 80%;
+    padding-top: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*  -- NAVIGATION -- */
+.navbar {
+    z-index: 1000;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-brand img {
+    width: 3rem;
+    filter: invert(0.7);
+}
+
+.nav-item {
+    font-weight: 400;
+    padding: 0 1.5rem;
+}
+
+.social {
+    opacity: 0.8;
+    padding-left: 1.5rem;
+}
+
+.social-header {
+    color: #333333;
+}
+
+.fab:hover {
+    color: #0F215E;
+}
+/*  -- NAVIGATION  END -- */
+
+.text-box {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: #333333;
+    font-family: 'Roboto Slab', serif;
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 500%;
+}
+
+.text-box h2 {
+    font-weight: 700;
+    font-size: 350%;
+    margin-bottom: 5%;
+}
+
+.text-box h4 {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    margin-bottom: 10%;
+    margin-top: 5%
+}
+
+.text-box img {
+    vertical-align: baseline;
+    margin-right: 10px;
+}
+
+.text-box .myBtn {
+    display: block;
+}
+
+
 @media screen and (max-width: 1200px) {
     .container {
         padding-top: 5vh;
         padding-bottom: 0;
         max-width: 95%;
     }
+
     .container h2 {
         font-size: 3rem;
     }
+
     .container h1 {
         font-size: 3rem;
     }
+
     .col-lg-6 {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
     p {
         margin-bottom: 1rem;
     }
+
+    .text-box h1 {
+        font-size: 300%;
+    }
+
+    .text-box h2 {
+        font-size: 200%;
+    }
+
+    .text-box h4 {
+        font-size: 100%;
+    }
+
+    .navbar-collapse .collapse.show {}
 }
+
+/*  -- HEADER END -- */
+
 
 /* -- JOGA SECTION -- */
 
+/*  -- JOGA SECTION END */
 
 
 /* -- DIAMONDS SECTION */
+
 .diamond {
     position: relative;
     width: 4rem;
@@ -199,6 +215,7 @@ p {
     font-weight: 400;
     font-size: 2rem;
 }
+
 .diamond:before {
     position: absolute;
     content: '';
@@ -210,9 +227,11 @@ p {
     border: 1px solid #EB5757;
     border-radius: 10px;
 }
+
 .title {
     margin-bottom: 3rem;
 }
+
 .col-12 button {
     margin-top: 3rem;
 }
@@ -221,17 +240,23 @@ p {
     .container h2 {
         font-size: 3rem;
     }
+
     .col-lg-6 {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 }
+/* -- DIAMONDS SECTION END */
+
 
 /* -- JULES FEBRE -- */
 
+/*  -- JULES FEBRE END */
+
 
 /* -- SCHEDULE -- */
-#schedule .container{
+
+#schedule .container {
     background: #fff;
     background-image: linear-gradient(to top, transparent, #fff), url("img/stephanie-moors.jpg");
     height: 100vh;
@@ -242,16 +267,20 @@ p {
     justify-content: center;
     align-items: flex-start;
 }
+
 #schedule .row {
     width: 80%;
 }
+
 #schedule h3 {
     text-transform: uppercase;
     letter-spacing: 0.4rem;
 }
+
 #schedule button {
     width: inherit;
 }
+
 .schedule {
     padding: 1.5rem;
     border: 1px solid #EB5757;
@@ -262,15 +291,18 @@ p {
     margin-right: 15%;
     max-width: 400px;
 }
+
 .schedule h2, .schedule h3 {
     color: #EB5757;
 }
+
 .schedule h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
+
 .schedule h3 {
-    letter-spacing: 0!important;
+    letter-spacing: 0 !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -279,21 +311,28 @@ p {
         max-width: 90%;
         height: auto;
     }
+
     #schedule .row {
         width: 95%;
     }
+
     .col-md-12 {
         margin-bottom: 1.5rem;
     }
+
     .schedule {
         margin-right: 0;
     }
 }
+/* -- SCHEDULE END -- */
+
 
 /*  -- PLACE -- */
+
 #place .container {
     padding-top: 10vh;
 }
+
 .marker {
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -304,6 +343,8 @@ p {
         padding-top: 5vh;
     }
 }
+/*  -- PLACE  END -- */
+
 
 /*  -- BUY TICKETS */
 
@@ -312,9 +353,11 @@ p {
     justify-content: center;
     align-items: flex-start;
 }
+
 #buyTickets .row {
     width: 80%;
 }
+
 .buyTicket {
     text-align: center;
     height: 600px;
@@ -328,27 +371,33 @@ p {
     display: flex;
     flex-direction: column;
 }
+
 .buyTicket ul {
     flex-grow: 1;
     padding-left: 3rem;
     text-align: left;
     font-size: 1rem;
 }
+
 .buyTicket li {
     padding-left: 1rem;
     padding-bottom: 0.5rem;
 }
+
 .buyTicket h3 {
     color: #EB5757;
     font-size: 1.5rem;
 }
+
 .buyTicket button {
     width: inherit;
 }
+
 div.buyTicket:hover {
     border: 2px solid #EB5757;
     box-shadow: 5px 5px 8px rgba(235, 87, 87, 0.1);
 }
+
 hr {
     border-top: 2px solid #0F215E;
     margin-top: 2rem;
@@ -357,18 +406,20 @@ hr {
     align: center;
 }
 
-
 @media screen and (max-width: 1200px) {
     #buyTickets .row {
         width: 95%;
     }
+
     .col-md-12 {
         margin-bottom: 1.5rem;
     }
 }
+/*  -- BUY TICKETS END --*/
 
 
 /*  -- FOOTER -- */
+
 footer {
     height: 109px;
     background: #333333;
@@ -383,15 +434,19 @@ footer {
     align-items: center;
     padding: 0 10% 0 10%;
 }
+
 footer img {
     height: 55px;
 }
+
 footer a {
     color: #fff;
 }
+
 footer a:hover {
     text-decoration: none;
 }
+
 .social-footer {
     color: #fff;
 }
@@ -403,30 +458,40 @@ footer a:hover {
         text-align: center;
         padding-top: 10px;
     }
+
     footer div {
         padding: 10px;
     }
+
     .social-footer {
         padding: 10px;
     }
 }
+/* -- FOOTER END -- */
+
+
 /* -- MODAL -- */
 
 .modal-content {
     border-radius: 10px;
 }
+
 .modal-header h4 {
     font-family: 'Roboto', serif;
     font-weight: 400;
     color: #0F215E;
 }
+
 .modal-footer .btn {
     border: none;
     border-radius: 7px;
 }
-.modal-footer .btn-primary{
+
+.modal-footer .btn-primary {
     background-color: #EB5757;
 }
-.modal-footer .btn-secondary{
+
+.modal-footer .btn-secondary {
     background-color: #333333;
 }
+/* -- MODAL END -- */
