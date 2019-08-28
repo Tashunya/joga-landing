@@ -219,8 +219,8 @@ header div.container {
 .diamond:before {
     position: absolute;
     content: '';
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     transform: rotateZ(45deg);
@@ -403,7 +403,6 @@ hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 15rem;
-    align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -423,7 +422,7 @@ hr {
 footer {
     height: 109px;
     background: #333333;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
