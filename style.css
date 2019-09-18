@@ -47,9 +47,11 @@ p {
     border: none;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    font-style: normal;
     text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: 0.4rem;
+    font-size: 17px;
+    letter-spacing: 0.31rem;
     border-radius: 5rem;
     padding: 15px 32px;
     width: 25rem;
@@ -451,20 +453,20 @@ footer a:hover {
 }
 
 @media screen and (max-width: 1200px) {
-    footer {
-        display: block;
-        height: auto;
-        text-align: center;
-        padding-top: 10px;
-    }
+  footer {
+      display: block;
+      height: auto;
+      text-align: center;
+      padding-top: 10px;
+  }
 
-    footer div {
-        padding: 10px;
-    }
+  footer div {
+      padding: 10px;
+  }
 
-    .social-footer {
-        padding: 10px;
-    }
+  .social-footer {
+      padding: 10px;
+  }
 }
 /* -- FOOTER END -- */
 
@@ -494,3 +496,36 @@ footer a:hover {
     background-color: #333333;
 }
 /* -- MODAL END -- */
+
+
+/* SUCCESS PAGE */
+.success{
+  height: 100vh;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.success img {
+  width: 5rem;
+  filter: invert(0.7);
+  margin-top: 25vh;
+}
+
+.success h2 {
+  margin-top: 4rem;
+}
+
+.success p {
+  margin-top: 1.5rem;
+}
+
+.success button {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 750px) {
+  .success h2 {
+    font-size: 2rem;
+  }
+}
